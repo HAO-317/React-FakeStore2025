@@ -1,0 +1,83 @@
+.checkout {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .cart-list {
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .checkout-thumbnail {
+    width: 60px;
+    height: auto;
+  }
+  
+  .item-details {
+    flex: 1;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantity-control button {
+    padding: 5px 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .clear-btn, .remove-btn {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .summary {
+    text-align: right;
+  }
+  
+  .payment-select {
+    width: 200px;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .pay-btn, .continue-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .pay-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .continue-btn {
+    background: #007bff;
+    color: white;
+  }
