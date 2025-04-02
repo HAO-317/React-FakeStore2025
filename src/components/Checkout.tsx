@@ -85,7 +85,7 @@ function Checkout({ cart, setCart, clearCart }: CheckoutProps) {
               <option value="paypal">PayPal</option>
               <option value="giftcard">Gift Card</option>
             </select>
-            <button onClick={handlePayment} className="pay-btn">Payment</button>
+            <button onClick={handlePayment} className="pay-btn">Pay</button>
             <Link to="/" className="continue-btn">Continue shopping</Link>
           </div>
         </>

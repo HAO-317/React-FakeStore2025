@@ -1,12 +1,14 @@
 .checkout {
     flex: 1;
     padding: 20px;
-    background-color: white;
-    border-radius: 5px;
   }
   
   .cart-list {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
   }
   
   .cart-item {
@@ -15,6 +17,9 @@
     gap: 20px;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
   }
   
   .checkout-thumbnail {
@@ -49,6 +54,9 @@
     border-radius: 5px;
     cursor: pointer;
   }
+  .clear-btn {
+    width: 20%;
+  }
   
   .summary {
     text-align: right;
@@ -71,13 +79,19 @@
     text-decoration: none;
     cursor: pointer;
   }
+  .pay-btn:hover,   .continue-btn:hover,   .clear-btn:hover , .remove-btn:hover,  button:hover  {
+    transform: scale(1.1);
+  }
+  
   
   .pay-btn {
     background: #28a745;
     color: white;
+    font-size: 1rem;
   }
   
   .continue-btn {
-    background: #007bff;
+    background: #007bff8f;
     color: white;
+    font-size: 0.8rem;
   }

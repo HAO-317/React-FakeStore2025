@@ -11,7 +11,7 @@
     justify-content: space-between;
     justify-items: center;
     gap: 10px;
-    background-color: white;
+ 
     border-radius: 5px;
 
   }
@@ -56,3 +56,8 @@
     border-radius: 5px;
     cursor: pointer;
   }
+
+  .checkout-btn:hover  {
+    transform: scale(1.1);
+  }
+  
