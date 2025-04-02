@@ -65,7 +65,7 @@ function App() {
           <div className="navigation">
             <Link to="/">Home</Link>
             <a href="#">About</a>
-            <a href="#">Shop</a>
+            <Link to="/Checkout">Shop</Link>
           </div>
         </nav>
 
@@ -93,6 +93,9 @@ function App() {
             />
           </Routes>
           <CartSidebar cart={cart} removeFromCart={removeFromCart} />
+        </div>
+        <div className='footer'>
+          <p>Copyright@FakeStore2025 by HAO317</p>
         </div>
       </div>
     </Router>
