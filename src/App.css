@@ -69,7 +69,27 @@
   }
 }
 
+.navigation {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  gap: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+.navigation a:hover {
+transform: scale(1.1);
+color: rgb(0, 47, 255);
+text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.5);
+}
 
+
+.navigation a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
 .header {
   text-align: left;
   color: #ffffff;
@@ -104,4 +124,11 @@
 .layout {
   display: flex;
   gap: 20px;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 0px 20px;
 }

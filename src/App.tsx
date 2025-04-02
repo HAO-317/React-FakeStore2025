@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // 导入 Link
 import Home from './components/Home';
 import CartSidebar from './components/CartSidebar';
 import SearchSidebar from './components/SearchSidebar';
@@ -60,7 +60,15 @@ function App() {
           <div className="wave"></div>
           <div className="wave"></div>
         </div>
-        <h1 className="header"> FAKESTORE2025</h1>
+        <h1 className="header">FAKESTORE2025</h1>
+        <nav>
+          <div className="navigation">
+            <Link to="/">Home</Link> 
+            <a href="#">About</a>    
+            <Link to="/checkout">Shop</Link>     
+          </div>
+        </nav>
+
         <div className="layout">
           <SearchSidebar
             setSearchKeyword={setSearchKeyword}
@@ -85,6 +93,9 @@ function App() {
             />
           </Routes>
           <CartSidebar cart={cart} removeFromCart={removeFromCart} />
+        </div>
+        <div className='footer'>
+              <p>Copyright @ FakeStore2025 by HAO317</p>
         </div>
       </div>
     </Router>
